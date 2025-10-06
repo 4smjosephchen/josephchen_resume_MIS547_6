@@ -1,5 +1,5 @@
 # Use Hugo Extended for SCSS support
-FROM hugomods/hugo:exts
+FROM hugomods/hugo:exts as builder
 
 # Set working directory
 WORKDIR /src
@@ -14,7 +14,10 @@ RUN hugo --minify -d /public
 FROM nginx:alpine
 
 # Copy the built Hugo site to Nginx html directory
-COPY --from=0 /public /usr/share/nginx/html
+COPY --from=builder /public /usr/share/nginx/html
+
+# Copy custom Nginx config to listen on port 8080
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Expose port 8080 for App Platform
 EXPOSE 8080
