@@ -1,6 +1,14 @@
+# Use Hugo Extended image
 FROM hugomods/hugo:exts
 
-COPY . /src
+# Set working directory
+WORKDIR /src
 
-# Build site.
-RUN hugo --minify 
+# Copy all files into the container
+COPY . .
+
+# Build the Hugo site into /public
+RUN hugo --minify -d public
+
+# Expose port (optional, DigitalOcean serves /public automatically)
+EXPOSE 8080
