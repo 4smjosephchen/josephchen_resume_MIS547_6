@@ -1,0 +1,33 @@
+- company: University of Arizona Artificial Intelligence Lab
+  roles:
+    - role: Graduate Research Assistant
+      details: |
+              Currently conducting research on exploitability assessment.
+      date: 08.2024 -  Present
+
+- company: Air Force Research Lab
+  page: 1
+  roles: 
+    - role: Intern
+      tools: neo4j, python, GCP
+      details: |
+              Completed project on multivariate time-series anomaly detection for foreign research interests
+      date: 06.2025 - 08.2025
+    
+#    - role: Junior Software Developer
+#      tools: HTML, PHP, CSS
+#      date: 10.2018 - 06.2019
+#      details: |
+#        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare sollicitudin fringilla.
+#        Aenean nec volutpat arcu. Maecenas quis tempus risus.
+
+#- company: Company 1
+#  page: 2
+#  roles:
+#    - role: Junior Software Developer
+#      tools: C#, Python, Postgresql
+#      details: |
+#        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare sollicitudin fringilla.
+#        Aenean nec volutpat arcu. Maecenas quis tempus risus. Curabitur condimentum ligula in erat pharetra porta. 
+#        Nam suscipit nisi a bibendum lacinia. Donec aliquet, nibh dignissim placerat efficit
+#      date: 2017 - 2018

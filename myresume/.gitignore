@@ -1,0 +1,15 @@
+/public/
+resources/
+resources-dev/
+hugo_stats.json
+.DS_Store
+.vscode/
+.idea/
+*.swp
+docs/
+img/
+part1/
+part2/
+README.md
+node_modules/
+dist/

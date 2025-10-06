@@ -1,0 +1,15 @@
+- name: MS Management Information System
+  university: University of Arizona
+  location: Tucson, AZ
+  #more: with Thesis # Optional field, if you want to add a non-standard line.
+  #link: https://... # Optional field, include a link to your project.
+  date: 2024-2026
+  gpa: 4.00 / 4.00
+  #details: >
+  #  Include details if you like to... 
+
+- name: BSBA Management Information Systems
+  university: University of Arizona
+  location: Tucson, AZ
+  date: 2021 - 2024
+  gpa : 3.65 / 4.00
