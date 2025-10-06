@@ -1,7 +1,14 @@
+# Use the Hugo Extended image
 FROM hugomods/hugo:exts
 
-# Copy source files into the container
-COPY . /src
+# Set working directory
+WORKDIR /src
 
-# Build the site (output -> /src/public)
-RUN hugo --minify
+# Copy all files
+COPY . .
+
+# Build the Hugo site
+RUN hugo --minify -d public
+
+# Expose port (optional for static sites)
+EXPOSE 8080
